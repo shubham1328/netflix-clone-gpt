@@ -92,10 +92,10 @@ function Login() {
   return (
     <div>
       <Header />
-      <div className="absolute">
+      <div className="fixed -z-10">
         <img
           src={BG_URL}
-          // className="w-full h-full object-cover object-center"
+          className="h-screen object-cover"
           alt="bglogo"
         />
       </div>
