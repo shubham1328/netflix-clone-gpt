@@ -8,8 +8,9 @@ export const API_OPTIONS = {
   method: "GET",
   headers: {
     accept: "application/json",
-    Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZWU4OTg0Njc4NjcxNjIxOWQ1N2JkZDRmYzJiN2VjMyIsInN1YiI6IjY1ZGFmNTE4NjJmMzM1MDE3YzRjZjRjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UX2MGmL-YuUMMbE28YbmJcqZ9yY0UPyYE6yMweMJqzs",
+    Authorization: "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5ZWU4OTg0Njc4NjcxNjIxOWQ1N2JkZDRmYzJiN2VjMyIsInN1YiI6IjY1ZGFmNTE4NjJmMzM1MDE3YzRjZjRjMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.UX2MGmL-YuUMMbE28YbmJcqZ9yY0UPyYE6yMweMJqzs",
+    // env key hide for security 
+    // Authorization: "Bearer " + process.env.REACT_APP_TMDB_KEY,
   },
 };
 
@@ -19,7 +20,10 @@ export const BG_URL =
   "https://assets.nflxext.com/ffe/siteui/vlv3/2e07bc25-8b8f-4531-8e1f-7e5e33938793/e4b3c14a-684b-4fc4-b14f-2b486a4e9f4e/IN-en-20240219-popsignuptwoweeks-perspective_alpha_website_large.jpg";
 
 export const SUPPORTED_LANGUAGE = [
-  {identifire: "en", name: "English"},
-  {identifire: "hi", name: "Hindi"},
-  {identifire: "spanish", name: "Spanish"},
-]
+  { identifire: "en", name: "English" },
+  { identifire: "hi", name: "Hindi" },
+  { identifire: "spanish", name: "Spanish" },
+];
+
+export const OPENAI_KEY = "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";
+// export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
